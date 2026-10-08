@@ -1,0 +1,370 @@
+:root {
+    --warna-biru: #123b8c;
+    --warna-orange: #f5a000;
+    --warna-putih: #ffffff;
+    --warna-bg: #f5f7fc;
+    --warna-teks: #172554;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--warna-bg);
+    color: var(--warna-teks);
+}
+
+/* Header */
+.header {
+    background-color: var(--warna-biru);
+    padding: 20px 50px;
+}
+
+.header__title {
+    margin: 0 0 15px;
+    color: var(--warna-putih);
+}
+
+/* Navigasi */
+.navigation__list {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation__link {
+    color: var(--warna-putih);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navigation__link:hover {
+    color: var(--warna-orange);
+}
+
+/* Beranda */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    min-height: 500px;
+    padding: 60px 80px;
+}
+
+.hero__content {
+    flex: 1;
+}
+
+.hero__title {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero__highlight {
+    color: var(--warna-orange);
+}
+
+.hero__text {
+    max-width: 550px;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.hero__quote {
+    line-height: 1.7;
+}
+
+.hero__figure {
+    flex: 1;
+    margin: 0;
+    text-align: center;
+}
+
+.hero__image {
+    width: 380px;
+    max-width: 100%;
+    border: 5px solid var(--warna-putih);
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(18, 59, 140, 0.2);
+}
+
+.hero__caption {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Judul Section */
+.section-title {
+    color: var(--warna-biru);
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+/* Tentang Saya */
+.about {
+    padding: 60px 80px;
+    background-color: var(--warna-putih);
+}
+
+.about__text {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* Pembelajaran */
+.learning {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 60px 80px;
+}
+
+.learning .section-title {
+    grid-column: 1 / -1;
+}
+
+/* Card */
+.card {
+    background-color: var(--warna-putih);
+    padding: 25px;
+    border-left: 5px solid var(--warna-orange);
+    border-radius: 12px;
+}
+
+.card__title {
+    color: var(--warna-biru);
+    margin-top: 0;
+}
+
+.card__text {
+    line-height: 1.7;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(18, 59, 140, 0.15);
+    transition: 0.3s;
+}
+
+/* Aktivitas dan Pengalaman */
+.activities {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 60px 80px;
+    background-color: var(--warna-putih);
+}
+
+.activities .section-title {
+    grid-column: 1 / -1;
+}
+
+.activities .card {
+    background-color: var(--warna-bg);
+}
+
+/* Hobi */
+.hobbies {
+    padding: 60px 80px;
+    text-align: center;
+}
+
+.hobbies .card {
+    max-width: 700px;
+    margin: 0 auto 20px;
+}
+
+/* Prinsip Hidup */
+.principle {
+    padding: 45px 80px;
+    background-color: var(--warna-biru);
+    color: var(--warna-putih);
+    text-align: center;
+}
+
+.principle__title {
+    color: var(--warna-orange);
+}
+
+.principle__text {
+    font-size: 18px;
+}
+
+/* Kontak */
+.contact {
+    padding: 60px 80px;
+    background-color: var(--warna-putih);
+}
+
+.contact__description {
+    line-height: 1.6;
+}
+
+.contact__form {
+    max-width: 800px;
+    margin: 30px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact__field {
+    margin: 0;
+}
+
+.contact__label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.contact__input,
+.contact__textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.contact__textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contact__input:focus,
+.contact__textarea:focus {
+    outline: none;
+    border-color: var(--warna-biru);
+}
+
+.contact__color {
+    width: 80px;
+    height: 45px;
+    padding: 3px;
+}
+
+.contact__range {
+    width: 100%;
+}
+
+.contact__button {
+    background-color: var(--warna-biru);
+    color: var(--warna-putih);
+    border: none;
+    padding: 14px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact__button:hover {
+    background-color: var(--warna-orange);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--warna-biru);
+    color: var(--warna-putih);
+    text-align: center;
+    padding: 20px;
+}
+
+.footer__text {
+    margin: 0;
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --warna-bg: #111827;
+        --warna-teks: #e5e7eb;
+        --warna-putih: #1f2937;
+    }
+
+    body {
+        background-color: var(--warna-bg);
+        color: var(--warna-teks);
+    }
+
+    .about,
+    .contact,
+    .card {
+        background-color: var(--warna-putih);
+    }
+
+    .activities {
+        background-color: var(--warna-bg);
+    }
+
+    .activities .card {
+        background-color: #1f2937;
+    }
+
+    .contact__input,
+    .contact__textarea {
+        background-color: #374151;
+        color: var(--warna-teks);
+        border-color: #4b5563;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header {
+        padding: 20px;
+    }
+
+    .navigation__list {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 25px;
+    }
+
+    .hero__title {
+        font-size: 32px;
+    }
+
+    .hero__text {
+        max-width: 100%;
+    }
+
+    .hero__image {
+        width: 280px;
+    }
+
+    .learning,
+    .activities {
+        grid-template-columns: 1fr;
+        padding: 40px 25px;
+    }
+
+    .learning .section-title,
+    .activities .section-title {
+        grid-column: auto;
+    }
+
+    .about,
+    .hobbies,
+    .contact {
+        padding: 40px 25px;
+    }
+
+    .principle {
+        padding: 40px 25px;
+    }
+}
